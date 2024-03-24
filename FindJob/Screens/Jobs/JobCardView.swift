@@ -7,17 +7,15 @@
 
 import SwiftUI
 
-struct JobCard: View {
-    
+struct JobCardView: View {
     @ObservedObject var viewModel: SearchViewModel
     
-    var index: Int
+    var vacancy: Vacancy
     
     var body: some View {
-        if let data = viewModel.welcome?.vacancies[index] {
             VStack(alignment: .leading) {
                 HStack() {
-                    if let persons = data.lookingNumber {
+                    if let persons = vacancy.lookingNumber {
                         Text("\(correctDeclination(countOfPersones: persons)) \(persons) человек")
                             .font(Resources.Fonts.text1)
                             .foregroundStyle(Resources.Colors.green)
@@ -26,25 +24,24 @@ struct JobCard: View {
                     Spacer()
                     
                     Button(action: {
-                        viewModel.tapLikeButton(by: index)
+                        viewModel.tapLikeButton(by: vacancy)
                     }) {
-                        Image(data.isFavorite ? .liked : .unliked)
-                            //.resizable()
+                        Image(vacancy.isFavorite ? .liked : .unliked)
                             .frame(width: 24, height: 24)
                     }
                 }
                 
-                Text("\(data.title)")
+                Text("\(vacancy.title)")
                     .font(Resources.Fonts.title3)
                     .foregroundStyle(Resources.Colors.white)
                 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("\(data.address.town)")
+                    Text("\(vacancy.address.town)")
                         .font(Resources.Fonts.text1)
                         .foregroundStyle(Resources.Colors.white)
                     
                     HStack {
-                        Text("\(data.company)")
+                        Text("\(vacancy.company)")
                             .font(Resources.Fonts.text1)
                             .foregroundStyle(Resources.Colors.white)
                         
@@ -56,13 +53,13 @@ struct JobCard: View {
                 HStack {
                     Image(.experience)
                     
-                    Text("\(data.experience.previewText)")
+                    Text("\(vacancy.experience.previewText)")
                         .font(Resources.Fonts.text1)
                         .foregroundStyle(Resources.Colors.white)
                 }
                 .padding(.top, 5)
                 
-                Text("Опубликовано \(data.publishedDate.dateFormatter)")
+                Text("Опубликовано \(vacancy.publishedDate.dateFormatter)")
                     .font(Resources.Fonts.text1)
                     .foregroundStyle(Resources.Colors.grey3)
                     .padding(.top, 5)
@@ -90,8 +87,6 @@ struct JobCard: View {
                 )
             )
             .background(Resources.Colors.grey1)
-            
-        }
     }
     
     private func correctDeclination(countOfPersones: Int) -> String {

@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct MapEntity {
+    let company: String
+    let adress: Address
+}

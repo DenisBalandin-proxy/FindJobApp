@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct ResponseEntity {
+    let appliedNumber: Int?
+    let lookingNumber: Int?
+}

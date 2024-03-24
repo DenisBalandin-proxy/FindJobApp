@@ -14,16 +14,15 @@
 
 import SwiftUI
 
-struct FavoriteJobsView: View {
-    
+struct FavoriteJobsCardView: View {
     @ObservedObject var viewModel: FavoriteViewModel
     
-    var index: Int
+    var vacancy: Vacancy
     
     var body: some View {
             VStack(alignment: .leading) {
                 HStack() {
-                    if let persons = viewModel.vacancies[index].lookingNumber {
+                    if let persons = vacancy.lookingNumber {
                         Text("\(correctDeclination(countOfPersones: persons)) \(persons) человек")
                             .font(Resources.Fonts.text1)
                             .foregroundStyle(Resources.Colors.green)
@@ -32,25 +31,24 @@ struct FavoriteJobsView: View {
                     Spacer()
                     
                     Button(action: {
-                        viewModel.tapLikeButton(by: index)
+                        viewModel.tapLikeButton(by: vacancy)
                     }) {
-                        Image(viewModel.vacancies[index].isFavorite ? .liked : .unliked)
-                            //.resizable()
+                        Image(vacancy.isFavorite ? .liked : .unliked)
                             .frame(width: 24, height: 24)
                     }
                 }
                 
-                Text("\(viewModel.vacancies[index].title)")
+                Text("\(vacancy.title)")
                     .font(Resources.Fonts.title3)
                     .foregroundStyle(Resources.Colors.white)
                 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("\(viewModel.vacancies[index].address.town)")
+                    Text("\(vacancy.address.town)")
                         .font(Resources.Fonts.text1)
                         .foregroundStyle(Resources.Colors.white)
                     
                     HStack {
-                        Text("\(viewModel.vacancies[index].company)")
+                        Text("\(vacancy.company)")
                             .font(Resources.Fonts.text1)
                             .foregroundStyle(Resources.Colors.white)
                         
@@ -62,13 +60,13 @@ struct FavoriteJobsView: View {
                 HStack {
                     Image(.experience)
                     
-                    Text("\(viewModel.vacancies[index].experience.previewText)")
+                    Text("\(vacancy.experience.previewText)")
                         .font(Resources.Fonts.text1)
                         .foregroundStyle(Resources.Colors.white)
                 }
                 .padding(.top, 5)
                 
-                Text("Опубликовано \(viewModel.vacancies[index].publishedDate.dateFormatter)")
+                Text("Опубликовано \(vacancy.publishedDate.dateFormatter)")
                     .font(Resources.Fonts.text1)
                     .foregroundStyle(Resources.Colors.grey3)
                     .padding(.top, 5)

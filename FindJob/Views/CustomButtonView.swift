@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct CustomButtonView: View {
-    var font: Font
-    var fontColor: Color
-    var title: String
-    var color: Color
-    var padding: CGFloat
+    let font: Font
+    let fontColor: Color
+    let title: String
+    let color: Color
+    let padding: CGFloat
     
     var body: some View {
         HStack {

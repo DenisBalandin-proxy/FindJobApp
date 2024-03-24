@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct JobHeaderEntity {
+    let title: String
+    let salary: Salary
+    let experience: Experience
+    let schedules: [String]
+}
