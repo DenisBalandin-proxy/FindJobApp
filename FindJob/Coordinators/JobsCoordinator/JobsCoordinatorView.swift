@@ -1,8 +1,21 @@
 //
-//  JobsCoordinatoView.swift
+//  JobsCoordinatorView.swift
 //  FindJob
 //
-//  Created by Denis on 3/24/24.
+//  Created by Denis on 3/21/24.
 //
 
-import Foundation
+import SwiftUI
+
+struct JobsCoordinatorView: View {
+    @ObservedObject var object: JobsCoordinatorObject
+    
+    var body: some View {
+        NavigationStack(path: $object.path) {
+            object.build(page: .jobs)
+                .navigationDestination(for: JobPage.self) { page in
+                    object.build(page: page)
+                }
+        }
+    }
+}

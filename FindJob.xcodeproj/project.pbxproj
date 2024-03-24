@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		920562B82BAC546F000C4678 /* JobsCoordinatorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920562B72BAC546F000C4678 /* JobsCoordinatorObject.swift */; };
-		920562BA2BAC5519000C4678 /* JobsCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920562B92BAC5519000C4678 /* JobsCoordinatorView.swift */; };
 		920562BE2BAC6CE9000C4678 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920562BD2BAC6CE9000C4678 /* DetailsView.swift */; };
 		920562C12BAC7603000C4678 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920562C02BAC7603000C4678 /* HeaderView.swift */; };
 		920562C32BAC7689000C4678 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920562C22BAC7689000C4678 /* Responses.swift */; };
@@ -29,10 +27,6 @@
 		921993382BA9C086009E7331 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921993372BA9C086009E7331 /* CustomButtonView.swift */; };
 		9219933A2BA9C74C009E7331 /* StaffSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921993392BA9C74C009E7331 /* StaffSearchView.swift */; };
 		9219933C2BA9C8DB009E7331 /* LoginWholeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219933B2BA9C8DB009E7331 /* LoginWholeView.swift */; };
-		9219933F2BA9D3F1009E7331 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219933E2BA9D3F1009E7331 /* CoordinatorView.swift */; };
-		921993412BA9D41F009E7331 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921993402BA9D41F009E7331 /* Coordinator.swift */; };
-		921993442BA9DAB3009E7331 /* CoordinatorTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921993432BA9DAB3009E7331 /* CoordinatorTabBarView.swift */; };
-		921993462BA9DAD0009E7331 /* CoordinatorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921993452BA9DAD0009E7331 /* CoordinatorObject.swift */; };
 		921993492BA9DB3F009E7331 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921993482BA9DB3F009E7331 /* SearchViewModel.swift */; };
 		9219934B2BA9DB57009E7331 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219934A2BA9DB57009E7331 /* FavoriteViewModel.swift */; };
 		9233A2742BAB16270078DDB6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9233A2732BAB16270078DDB6 /* NetworkManager.swift */; };
@@ -44,15 +38,19 @@
 		928EDFF82BAB1F0B00C8A76E /* RecommendationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928EDFF72BAB1F0B00C8A76E /* RecommendationsView.swift */; };
 		928EDFFA2BAB415D00C8A76E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928EDFF92BAB415D00C8A76E /* SearchView.swift */; };
 		92CA3ACD2BAEB8E000712CA8 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA3ACC2BAEB8E000712CA8 /* DatabaseManager.swift */; };
-		92CA3AD02BAEC4E900712CA8 /* FavoritesCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA3ACF2BAEC4E900712CA8 /* FavoritesCoordinatorView.swift */; };
-		92CA3AD22BAEC4F900712CA8 /* FavoritesCoordinatorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA3AD12BAEC4F900712CA8 /* FavoritesCoordinatorObject.swift */; };
 		92CA3AD62BAED3D500712CA8 /* FavoriteJobsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA3AD52BAED3D500712CA8 /* FavoriteJobsCardView.swift */; };
 		92D796772BB021DA00CF26D7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D796762BB021DA00CF26D7 /* LoginViewModel.swift */; };
+		92D797512BB0618900CF26D7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D797502BB0618900CF26D7 /* Coordinator.swift */; };
+		92D797532BB061A200CF26D7 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D797522BB061A200CF26D7 /* CoordinatorView.swift */; };
+		92D797562BB061C500CF26D7 /* CoordinatorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D797552BB061C500CF26D7 /* CoordinatorObject.swift */; };
+		92D797582BB061E200CF26D7 /* CoordinatorTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D797572BB061E200CF26D7 /* CoordinatorTabBarView.swift */; };
+		92D7975B2BB0620600CF26D7 /* JobsCoordinatorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7975A2BB0620600CF26D7 /* JobsCoordinatorObject.swift */; };
+		92D7975D2BB0621B00CF26D7 /* JobsCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7975C2BB0621B00CF26D7 /* JobsCoordinatorView.swift */; };
+		92D797602BB0624300CF26D7 /* FavoritesCoordinatorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7975F2BB0624300CF26D7 /* FavoritesCoordinatorObject.swift */; };
+		92D797622BB0625600CF26D7 /* FavoritesCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D797612BB0625600CF26D7 /* FavoritesCoordinatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		920562B72BAC546F000C4678 /* JobsCoordinatorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsCoordinatorObject.swift; sourceTree = "<group>"; };
-		920562B92BAC5519000C4678 /* JobsCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsCoordinatorView.swift; sourceTree = "<group>"; };
 		920562BD2BAC6CE9000C4678 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		920562C02BAC7603000C4678 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		920562C22BAC7689000C4678 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
@@ -74,10 +72,6 @@
 		921993372BA9C086009E7331 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 		921993392BA9C74C009E7331 /* StaffSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffSearchView.swift; sourceTree = "<group>"; };
 		9219933B2BA9C8DB009E7331 /* LoginWholeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWholeView.swift; sourceTree = "<group>"; };
-		9219933E2BA9D3F1009E7331 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
-		921993402BA9D41F009E7331 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		921993432BA9DAB3009E7331 /* CoordinatorTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTabBarView.swift; sourceTree = "<group>"; };
-		921993452BA9DAD0009E7331 /* CoordinatorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorObject.swift; sourceTree = "<group>"; };
 		921993482BA9DB3F009E7331 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		9219934A2BA9DB57009E7331 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		9233A2732BAB16270078DDB6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -89,10 +83,16 @@
 		928EDFF72BAB1F0B00C8A76E /* RecommendationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsView.swift; sourceTree = "<group>"; };
 		928EDFF92BAB415D00C8A76E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		92CA3ACC2BAEB8E000712CA8 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
-		92CA3ACF2BAEC4E900712CA8 /* FavoritesCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinatorView.swift; sourceTree = "<group>"; };
-		92CA3AD12BAEC4F900712CA8 /* FavoritesCoordinatorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinatorObject.swift; sourceTree = "<group>"; };
 		92CA3AD52BAED3D500712CA8 /* FavoriteJobsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteJobsCardView.swift; sourceTree = "<group>"; };
 		92D796762BB021DA00CF26D7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		92D797502BB0618900CF26D7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		92D797522BB061A200CF26D7 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		92D797552BB061C500CF26D7 /* CoordinatorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorObject.swift; sourceTree = "<group>"; };
+		92D797572BB061E200CF26D7 /* CoordinatorTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTabBarView.swift; sourceTree = "<group>"; };
+		92D7975A2BB0620600CF26D7 /* JobsCoordinatorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsCoordinatorObject.swift; sourceTree = "<group>"; };
+		92D7975C2BB0621B00CF26D7 /* JobsCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsCoordinatorView.swift; sourceTree = "<group>"; };
+		92D7975F2BB0624300CF26D7 /* FavoritesCoordinatorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinatorObject.swift; sourceTree = "<group>"; };
+		92D797612BB0625600CF26D7 /* FavoritesCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,15 +106,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		920562B62BAC5438000C4678 /* JobsCoordinator */ = {
-			isa = PBXGroup;
-			children = (
-				920562B72BAC546F000C4678 /* JobsCoordinatorObject.swift */,
-				920562B92BAC5519000C4678 /* JobsCoordinatorView.swift */,
-			);
-			name = JobsCoordinator;
-			sourceTree = "<group>";
-		};
 		920562BF2BAC752D000C4678 /* Details */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,11 +146,11 @@
 		9219930C2BA96ABD009E7331 /* FindJob */ = {
 			isa = PBXGroup;
 			children = (
+				92D7974A2BB060EC00CF26D7 /* Coordinators */,
 				920562C42BAC7A04000C4678 /* Entity */,
 				9233A2752BAB18150078DDB6 /* Models */,
 				9233A2722BAB16180078DDB6 /* Managers */,
 				921993472BA9DB18009E7331 /* ViewModels */,
-				9219933D2BA9D3A5009E7331 /* Coordinators */,
 				9219932F2BA99CA3009E7331 /* Views */,
 				921993262BA97779009E7331 /* Extensions */,
 				921993202BA96E59009E7331 /* SupportingFiles */,
@@ -249,27 +240,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		9219933D2BA9D3A5009E7331 /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				92CA3ACE2BAEC4CD00712CA8 /* FavoritesCoordinator */,
-				920562B62BAC5438000C4678 /* JobsCoordinator */,
-				921993422BA9DA13009E7331 /* TabBarCoordinator */,
-				9219933E2BA9D3F1009E7331 /* CoordinatorView.swift */,
-				921993402BA9D41F009E7331 /* Coordinator.swift */,
-			);
-			name = Coordinators;
-			sourceTree = "<group>";
-		};
-		921993422BA9DA13009E7331 /* TabBarCoordinator */ = {
-			isa = PBXGroup;
-			children = (
-				921993432BA9DAB3009E7331 /* CoordinatorTabBarView.swift */,
-				921993452BA9DAD0009E7331 /* CoordinatorObject.swift */,
-			);
-			name = TabBarCoordinator;
-			sourceTree = "<group>";
-		};
 		921993472BA9DB18009E7331 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,13 +267,51 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		92CA3ACE2BAEC4CD00712CA8 /* FavoritesCoordinator */ = {
+		92D7974A2BB060EC00CF26D7 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				92CA3ACF2BAEC4E900712CA8 /* FavoritesCoordinatorView.swift */,
-				92CA3AD12BAEC4F900712CA8 /* FavoritesCoordinatorObject.swift */,
+				92D7975E2BB0622F00CF26D7 /* FavoritesCoordinator */,
+				92D797592BB061E700CF26D7 /* JobsCoordinator */,
+				92D797542BB061A800CF26D7 /* TabBarCoordinator */,
+				92D7974B2BB060F800CF26D7 /* LoginCoordinator */,
 			);
-			name = FavoritesCoordinator;
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		92D7974B2BB060F800CF26D7 /* LoginCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				92D797502BB0618900CF26D7 /* Coordinator.swift */,
+				92D797522BB061A200CF26D7 /* CoordinatorView.swift */,
+			);
+			path = LoginCoordinator;
+			sourceTree = "<group>";
+		};
+		92D797542BB061A800CF26D7 /* TabBarCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				92D797552BB061C500CF26D7 /* CoordinatorObject.swift */,
+				92D797572BB061E200CF26D7 /* CoordinatorTabBarView.swift */,
+			);
+			path = TabBarCoordinator;
+			sourceTree = "<group>";
+		};
+		92D797592BB061E700CF26D7 /* JobsCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				92D7975A2BB0620600CF26D7 /* JobsCoordinatorObject.swift */,
+				92D7975C2BB0621B00CF26D7 /* JobsCoordinatorView.swift */,
+			);
+			path = JobsCoordinator;
+			sourceTree = "<group>";
+		};
+		92D7975E2BB0622F00CF26D7 /* FavoritesCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				92D7975F2BB0624300CF26D7 /* FavoritesCoordinatorObject.swift */,
+				92D797612BB0625600CF26D7 /* FavoritesCoordinatorView.swift */,
+			);
+			path = FavoritesCoordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,11 +386,11 @@
 			files = (
 				921993312BA9AE84009E7331 /* UIColor + Extension.swift in Sources */,
 				9207E8582BAD6323000D323D /* MapEntity.swift in Sources */,
-				921993442BA9DAB3009E7331 /* CoordinatorTabBarView.swift in Sources */,
+				92D7975D2BB0621B00CF26D7 /* JobsCoordinatorView.swift in Sources */,
 				9259442C2BAADCCD0011F79D /* String + Extension.swift in Sources */,
-				9219933F2BA9D3F1009E7331 /* CoordinatorView.swift in Sources */,
+				92D797562BB061C500CF26D7 /* CoordinatorObject.swift in Sources */,
 				9233A2742BAB16270078DDB6 /* NetworkManager.swift in Sources */,
-				921993412BA9D41F009E7331 /* Coordinator.swift in Sources */,
+				92D797582BB061E200CF26D7 /* CoordinatorTabBarView.swift in Sources */,
 				921993222BA971A1009E7331 /* FavoritesView.swift in Sources */,
 				9207E8562BAD6064000D323D /* MapView.swift in Sources */,
 				920562BE2BAC6CE9000C4678 /* DetailsView.swift in Sources */,
@@ -390,27 +398,27 @@
 				921993492BA9DB3F009E7331 /* SearchViewModel.swift in Sources */,
 				9219934B2BA9DB57009E7331 /* FavoriteViewModel.swift in Sources */,
 				92CA3ACD2BAEB8E000712CA8 /* DatabaseManager.swift in Sources */,
-				920562BA2BAC5519000C4678 /* JobsCoordinatorView.swift in Sources */,
+				92D797602BB0624300CF26D7 /* FavoritesCoordinatorObject.swift in Sources */,
 				9219930E2BA96ABD009E7331 /* FindJobApp.swift in Sources */,
 				92CA3AD62BAED3D500712CA8 /* FavoriteJobsCardView.swift in Sources */,
 				92492D172BAC32B10094B5FC /* BinaryInteger + Extension.swift in Sources */,
-				92CA3AD22BAEC4F900712CA8 /* FavoritesCoordinatorObject.swift in Sources */,
 				92D796772BB021DA00CF26D7 /* LoginViewModel.swift in Sources */,
-				921993462BA9DAD0009E7331 /* CoordinatorObject.swift in Sources */,
 				920562C12BAC7603000C4678 /* HeaderView.swift in Sources */,
+				92D797512BB0618900CF26D7 /* Coordinator.swift in Sources */,
 				92492D152BAC1F920094B5FC /* JobCardView.swift in Sources */,
-				920562B82BAC546F000C4678 /* JobsCoordinatorObject.swift in Sources */,
 				920562C32BAC7689000C4678 /* Responses.swift in Sources */,
+				92D797532BB061A200CF26D7 /* CoordinatorView.swift in Sources */,
 				921993382BA9C086009E7331 /* CustomButtonView.swift in Sources */,
 				928EDFFA2BAB415D00C8A76E /* SearchView.swift in Sources */,
-				92CA3AD02BAEC4E900712CA8 /* FavoritesCoordinatorView.swift in Sources */,
 				9233A2772BAB182A0078DDB6 /* JobsModel.swift in Sources */,
+				92D797622BB0625600CF26D7 /* FavoritesCoordinatorView.swift in Sources */,
 				9259442A2BAABFCC0011F79D /* PinCodeView.swift in Sources */,
 				928EDFF82BAB1F0B00C8A76E /* RecommendationsView.swift in Sources */,
 				9207E85A2BAD8A15000D323D /* JobHeaderEntity.swift in Sources */,
 				921993252BA9752D009E7331 /* Resources.swift in Sources */,
 				9219931F2BA96E34009E7331 /* JobsView.swift in Sources */,
 				9219933A2BA9C74C009E7331 /* StaffSearchView.swift in Sources */,
+				92D7975B2BB0620600CF26D7 /* JobsCoordinatorObject.swift in Sources */,
 				9219932E2BA99C5F009E7331 /* TextFieldView.swift in Sources */,
 				9219933C2BA9C8DB009E7331 /* LoginWholeView.swift in Sources */,
 				921993282BA9778F009E7331 /* Color + Extension.swift in Sources */,
